@@ -7,13 +7,14 @@
  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">                                                   
      
     <!--links to css and fonts -->   
+<!--    <link rel="stylesheet" type="text/css" href="css/frameworks.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title> Boiler Plate</title> 
-       
 </head> 
-   <body>  
-        <div class='row'>
-            <div class='col-12 border'>
+<body>  
+<div class='container-fluid'>
+    <div class='row'>
+            <div class='col-md-12'>
                 <header id="header">
             
             <h1>My life's a mess</h1>
@@ -21,35 +22,30 @@
             
         </header> 
             
-            </div>
+        </div>
        
-       </div>
-       <div class='col-12 border'>
+    </div>
+    <div class='row'> 
+       <div class='col-md-12'>
             <nav id="nav">
                 <ul class="button-wrap">
                 <button>Schedule</button>
-                <button>CSS</button>
-                <button>HTML</button>
+                <button data-toggle="modal" data-target="css_modal">CSS</button>
+                <button data-toggle="modal" data-target="css3_modal">HTML</button>
                 <button>Responsive Design</button>
             </ul>
     
         </nav>
     </div>
-<!--End Menu-->
-        
-        <div class='row max-width'>
-            <div class='col-8 border'>
-        <div id='middle-wrapper-width'>
-            
-                    <div class="side-by-side"> 
-                        <section class='image-content'>
-                        
-                                <img src="http://thearcofmass.org/wp-content/uploads/2014/03/face.jpg">
-                            <h4>
-                            <a 
-                               href=https://www.google.com> Angelica Roberts</a>
-                            </h4>
-                        
+</div>
+<div class='row max-width'>
+            <div class='col-md-8'>
+        <div id='main-wrapper-width'>
+                <div class="row"> 
+                        <section class='image-content col-6'>
+                        <img src="images/Angelica.jpg">
+                        <h4><a 
+                         href=https://www.google.com> Angelica Roberts</a></h4>
                         </section>
                         <article> 
                             <h2>Summary</h2>
@@ -64,7 +60,7 @@ Then you show your little light,
 Twinkle, twinkle, all the night.
 
 Then the traveler in the dark,
-Thanks you for your tiny spark,
+Thank you for your tiny spark,
 He could not see which way to go,
 If you did not twinkle so.
 
@@ -82,20 +78,12 @@ Twinkle, twinkle, little star.."</p>
                         </article>
                         <!--end side by side--> </div>
                         <section id='skills'> 
-                        <H5>
-                            SKILLS: <span> html | css | javascript | git</span>
-                            
-                            </H5>
-                            
-                        </section>
+                        <H5>SKILLS: <span> html | css | javascript | git</span></H5>
+                    </section>
+                </div>
             
-                    </div>
             </div>
-            
-                    <!--end main-content-wrapper -->
-            
-            
-                <div id='col-4 border'> 
+            <div id='col-4 border'> 
                     <div id='aside-content-wrapper'>
                             <aside id='aside=right'>
                             <h3>latest work</h3>
@@ -110,29 +98,68 @@ Twinkle, twinkle, little star.."</p>
                                 </ul>
                             </aside>
                       </div>
-                <!--end-of-aside-content-wrapper-->
-       </div>
-                <!--end-middle-wrapper-->
-            <div id='favorite-sites' class="row">
                 
-                <div class='col-4 border'>
-                <img src=images/fb-icon.png>
+       </div>
+    </div>
+        <div id='favorite-sites'> <div class="row">
+            <div class='col-md-4'>
+                    <img src=images/fb-icon.png>
                 </div>
-                <div class='col-4 border'>
-                <img src='images/snapchat-logo-2D9C3E7ADA-seeklogo.com.png'>
+                <div class='col-md-4 border'>
+                    <img src='images/snapchat-logo-2D9C3E7ADA-seeklogo.com.png'>
                 </div>
-                <div class='col-4 border'><img src='images/twitter-icon.jpg'></div>
+                <div class='col-md-4 border'>
+                    <img src='images/twitter-icon.jpg'>
+            </div>
+        </div>
+    </div>
         
-         </div>
-         <div/> 
-        <div class="row">
-            <div class='col-12 border'> </div>
+    <div class="row">
+            <div class='.col-md-12'> </div>
                     <footer><h1>Footy</h1></footer>
         </div>
-            
-                
-      <script src="js/main.js"></script> 
+    </div>
+<!--end container div-->
+<!--Modal-HTML5-->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal CSS3 -->
+<div class="modal fade" id="css3_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.min.css"></script>
+    <script src="js/main.js"></script> 
+    
     </body> 
-
 
 </html>
